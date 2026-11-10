@@ -1,0 +1,5 @@
+Log_ID,Employee_ID,Employee_Name,Department,Event_Type,Effective_Date,Approved_By,Old_Value,New_Value,Notes
+HR-MOV-5001,EMP-1088,Reem Al-Husseini,Operations,TERMINATION,2026-01-31,HR Director (H. Al-Falasi),Active,Terminated,Voluntary resignation. Final settlement cleared.
+HR-MOV-5002,EMP-1045,Khalid Al-Otaibi,Operations,TERMINATION,2026-01-25,Operations VP (F. Al-Zaabi),Active,Terminated,Terminated for cause following safety disciplinary committee hearing. Do not process Feb payroll.
+HR-MOV-5003,EMP-1016,Fatima Al-Otaibi,Finance,PROMOTION,2026-02-01,Chief Financial Officer (R. Al-Mansoori),Junior Accountant - Basic: 7500.00,General Ledger Accountant - Basic: 9800.00,Approved annual career progression cycle review.
+HR-MOV-5004,EMP-1251,Zubair Al-Hashimi,Operations,NEW_HIRE,2026-02-01,VP Operations (M. Siddiqui),N/A,Maintenance Technician - Basic: 7200.00,Replacement for departed line maintenance staff.

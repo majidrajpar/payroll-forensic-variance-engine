@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Environment variables & IDEs
+.env
+.env.*
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test & coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated Excel reports (preserve sample data only)
+*.xlsx
+*.csv
+!sample_data/*.xlsx
+!sample_data/*.csv
+
+# Commercial marketplace staging files (excluded from open-source repository)
+COMMERCIAL_LICENSE.md
+README_Product_Listing.md
+UPLOAD_SPEC_*.md
+*.zip
+previews/

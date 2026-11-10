@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "payroll-audit-engine"
+version = "1.0.0"
+description = "Deterministic continuous controls monitoring, population reconciliation, and forensic variance engine for corporate payroll."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Majid Mumtaz", email = "majid@veritux.com" }
+]
+maintainers = [
+    { name = "Majid Mumtaz", email = "majid@veritux.com" }
+]
+keywords = [
+    "payroll",
+    "forensics",
+    "internal-audit",
+    "continuous-controls-monitoring",
+    "fraud-detection",
+    "reconciliation",
+    "grc"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Legal Industry",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Security",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+    "rich>=13.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/majidrajpar/payroll-forensic-variance-engine"
+Repository = "https://github.com/majidrajpar/payroll-forensic-variance-engine.git"
+"Bug Tracker" = "https://github.com/majidrajpar/payroll-forensic-variance-engine/issues"
+Portfolio = "https://majidrajpar.github.io/portfolio_my"
+LinkedIn = "https://www.linkedin.com/in/majid-m-4b097118/"
+
+[project.scripts]
+payroll-audit-engine = "payroll_audit_engine:main"
+
+[tool.setuptools]
+py-modules = ["payroll_audit_engine", "generate_sample_payroll_data"]
