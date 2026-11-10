@@ -31,8 +31,8 @@ htmlcov/
 # Generated Excel reports (preserve sample data only)
 *.xlsx
 *.csv
-!sample_data/*.xlsx
-!sample_data/*.csv
+!examples/sample_data/*.xlsx
+!examples/sample_data/*.csv
 
 # Commercial marketplace staging files (excluded from open-source repository)
 COMMERCIAL_LICENSE.md

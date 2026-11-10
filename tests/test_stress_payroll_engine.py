@@ -16,11 +16,15 @@ Executes rigorous stress testing across:
 
 import unittest
 import os
+import sys
 import time
 import tempfile
 import pandas as pd
 import numpy as np
 from datetime import datetime, date
+
+# Ensure root directory is in sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Import engine components
 from payroll_audit_engine import (

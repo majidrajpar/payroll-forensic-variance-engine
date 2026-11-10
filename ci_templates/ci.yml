@@ -36,7 +36,7 @@ jobs:
 
       - name: Run Forensic Engine Stress & Logic Tests
         run: |
-          python test_stress_payroll_engine.py
+          python tests/test_stress_payroll_engine.py
 
       - name: Verify CLI Entry Point
         run: |

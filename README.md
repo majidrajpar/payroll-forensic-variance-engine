@@ -143,9 +143,9 @@ For automated data pipelines, continuous controls monitoring (CCM) jobs, and bat
 
 ```bash
 payroll-audit-engine \
-  --prior sample_data/Payroll_Register_M01.xlsx \
-  --current sample_data/Payroll_Register_M02.xlsx \
-  --hr sample_data/HR_Movement_Log.xlsx \
+  --prior examples/sample_data/Payroll_Register_M01.xlsx \
+  --current examples/sample_data/Payroll_Register_M02.xlsx \
+  --hr examples/sample_data/HR_Movement_Log.xlsx \
   --output Payroll_Forensic_Audit_Report.xlsx \
   --spike-threshold 0.15 \
   --round-threshold 1000.0 \
@@ -167,26 +167,25 @@ The available command-line arguments are structured as follows:
 
 ---
 
-## Test Data and Stress Benchmarks
+## Example Data and Stress Testing
 
-The repository includes a synthetic test dataset reflecting a 250-employee multi-department workforce in `sample_data/`:
+The repository provides example datasets and automated tests in structured subdirectories:
 
-- `Payroll_Register_M01.xlsx` / `.csv`: Month 1 baseline register.
-- `Payroll_Register_M02.xlsx` / `.csv`: Month 2 register with seeded ghost employees, bank collusion clusters, unapproved salary spikes, and policy violations.
-- `HR_Movement_Log.xlsx` / `.csv`: Lifecycle log containing official hires, promotions, and terminations.
+- `examples/sample_data/`: Contains synthetic Month 1 and Month 2 registers along with an HR lifecycle log for a 250-employee workforce with seeded red flags.
+- `tests/`: Contains the automated stress test suite verifying numeric sanitization, collision detection, edge-case imputation, and scalability.
 
-### Regenerating Test Data
-You can rebuild or customize the sample dataset with reproducible seeds:
+### Regenerating Example Data
+To rebuild or customize the synthetic test dataset:
 
 ```bash
-python generate_sample_payroll_data.py
+python examples/generate_sample_payroll_data.py
 ```
 
-### Executing the Stress Test Suite
-The automated stress test suite verifies schema normalization, heuristic accuracy, edge case imputation, and high-volume performance:
+### Executing the Test Suite
+To run the automated verification suite:
 
 ```bash
-python test_stress_payroll_engine.py
+python tests/test_stress_payroll_engine.py
 ```
 
 The test runner processes a simulated 10,000-employee population across two monthly registers in under 3.5 seconds on standard commercial hardware.
